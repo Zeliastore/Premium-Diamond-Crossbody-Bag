@@ -3,419 +3,548 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multifungsi Rotating Storage Rack - Solusi Penyimpanan Praktis</title>
+    <title>Premium Diamond Crossbody Bag - Tas Mewah dengan Kristal Authentic</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#FF6B6B',
-                        secondary: '#4ECDC4',
-                        accent: '#FFE66D',
-                        dark: '#292F36',
-                        light: '#F7FFF7'
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
-        }
-        
-        .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .testimonial-card {
-            transition: all 0.3s ease;
-        }
-        
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .modal {
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-        }
-        
-        .floating-button {
-            animation: float 3s ease-in-out infinite;
-        }
-        
         @keyframes float {
             0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
-        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+        .product-gallery img {
+            transition: transform 0.3s ease;
+        }
+        .product-gallery img:hover {
+            transform: scale(1.03);
+        }
         .pulse {
             animation: pulse 2s infinite;
         }
-        
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
+        .shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .shine:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 20%;
+            height: 200%;
+            opacity: 0;
+            transform: rotate(30deg);
+            background: rgba(255, 255, 255, 0.13);
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0.13) 0%,
+                rgba(255, 255, 255, 0.13) 77%,
+                rgba(255, 255, 255, 0.5) 92%,
+                rgba(255, 255, 255, 0.0) 100%
+            );
+        }
+        .shine:hover:after {
+            opacity: 1;
+            left: 130%;
+            transition-property: left, top, opacity;
+            transition-duration: 0.7s, 0.7s, 0.15s;
+            transition-timing-function: ease;
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="font-sans bg-gray-50 text-gray-800">
     <!-- Floating WhatsApp Button -->
-    <a href="https://api.whatsapp.com/send?phone=6285880343981&text=Halo%2C%20saya%20menginginkan%20Multifungsi%20Rotating%20Storage%20Rack" 
-       class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg z-50 floating-button hover:bg-green-600 transition-colors">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://api.whatsapp.com/send?phone=6285880343981&text=Halo%2C%20saya%20menginginkan%20Premium%20Diamond%20Crossbody%20Bag" 
+           class="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
 
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-40">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdyl-m0h5sbggjoem9e.webp" alt="Logo" class="h-12">
-                <span class="ml-2 font-bold text-xl text-dark hidden md:block">Rotating Storage</span>
+            <div class="text-xl font-bold text-pink-600">DiamondLux</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-pink-600">Keunggulan</a>
+                <a href="#gallery" class="hover:text-pink-600">Galeri</a>
+                <a href="#testimonials" class="hover:text-pink-600">Testimoni</a>
+                <a href="#faq" class="hover:text-pink-600">FAQ</a>
             </div>
-            <div class="flex items-center space-x-4">
-                <a href="#features" class="text-dark hover:text-primary hidden md:block">Fitur</a>
-                <a href="#testimonials" class="text-dark hover:text-primary hidden md:block">Testimoni</a>
-                <a href="#gallery" class="text-dark hover:text-primary hidden md:block">Galeri</a>
-                <a href="#order" class="bg-primary text-white px-4 py-2 rounded-full font-medium hover:bg-red-600 transition-colors pulse">
-                    BELI SEKARANG
-                </a>
-            </div>
-            <button class="md:hidden text-2xl text-dark" id="mobile-menu-button">
-                <i class="fas fa-bars"></i>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
             </button>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white w-full py-2 px-4 shadow-md" id="mobile-menu">
-            <a href="#features" class="block py-2 text-dark hover:text-primary">Fitur</a>
-            <a href="#testimonials" class="block py-2 text-dark hover:text-primary">Testimoni</a>
-            <a href="#gallery" class="block py-2 text-dark hover:text-primary">Galeri</a>
-            <a href="#order" class="block bg-primary text-white px-4 py-2 rounded-full font-medium text-center my-2 hover:bg-red-600 transition-colors">
-                BELI SEKARANG
-            </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero text-white py-12 md:py-20">
+    <section class="bg-gradient-to-r from-pink-50 to-purple-50 py-12 md:py-20">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-8 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Multifungsi Rotating Storage Rack</h1>
-                <p class="text-xl mb-6">Solusi Penyimpanan Praktis untuk Rumah Minimalis Anda</p>
-                <div class="bg-white text-dark rounded-lg p-4 mb-6 inline-block">
-                    <div class="flex items-center">
-                        <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold">GRATIS ONGKIR</p>
-                            <p class="text-sm">Seluruh Indonesia</p>
-                        </div>
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Premium Diamond <span class="text-pink-600">Crossbody Bag</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-6">
+                    Tas eksklusif dengan kristal authentic yang memancarkan kemewahan di setiap langkahmu.
+                </p>
+                <div class="bg-pink-100 border-l-4 border-pink-500 p-4 mb-6">
+                    <p class="text-pink-800 font-medium">
+                        <i class="fas fa-check-circle text-pink-500 mr-2"></i>
+                        <span id="view-counter">1,257</span> wanita sudah membeli tas ini bulan ini!
+                    </p>
+                </div>
+                <div class="flex items-center mb-6">
+                    <div class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium mr-3">
+                        <i class="fas fa-bolt mr-1"></i> PROMO TERBATAS
+                    </div>
+                    <div class="text-gray-600">
+                        <i class="fas fa-clock mr-1"></i> Berakhir dalam: 
+                        <span id="countdown" class="font-bold">23:59:59</span>
                     </div>
                 </div>
-                <div class="flex flex-wrap gap-4 mb-6">
-                    <div class="bg-white/20 rounded-lg p-3 text-center">
-                        <p class="text-2xl font-bold" id="view-counter">1,258</p>
-                        <p class="text-sm">Dilihat Hari Ini</p>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl font-bold text-pink-600">Rp179<span class="text-2xl">.000</span></div>
+                        <div class="ml-4 text-gray-500 line-through">Rp249.000</div>
+                        <div class="ml-4 bg-red-100 text-red-800 px-2 py-1 rounded text-sm font-medium">
+                            Hemat 49%
+                        </div>
                     </div>
-                    <div class="bg-white/20 rounded-lg p-3 text-center">
-                        <p class="text-2xl font-bold" id="sold-counter">892</p>
-                        <p class="text-sm">Terjual Bulan Ini</p>
-                    </div>
-                    <div class="bg-white/20 rounded-lg p-3 text-center">
-                        <p class="text-2xl font-bold" id="stock-counter">48</p>
-                        <p class="text-sm">Stok Tersisa</p>
-                    </div>
+                    <p class="text-gray-600 mb-4">
+                        <i class="fas fa-gift text-pink-500 mr-2"></i> 
+                        <span class="font-medium">GRATIS 1 TAS</span> untuk setiap pembelian
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        <i class="fas fa-truck text-pink-500 mr-2"></i> 
+                        <span class="font-medium">GRATIS ONGKIR</span> ke seluruh Indonesia
+                    </p>
+                    <a href="#order" class="block w-full bg-pink-600 hover:bg-pink-700 text-white text-center py-3 px-6 rounded-lg font-bold transition duration-300 transform hover:scale-105 pulse shine">
+                        BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
-                <a href="#order" class="bg-accent text-dark font-bold px-8 py-4 rounded-full text-lg hover:bg-yellow-400 transition-colors inline-block">
-                    BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+                <div class="flex items-center justify-center space-x-4">
+                    <img src="https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150818_6b4f086a494fb80f5e4e27b20671322d.gif" alt="Payment Methods" class="h-8">
+                </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdyl-m0h5sbggjoem9e.webp" 
-                     alt="Multifungsi Rotating Storage Rack" 
-                     class="rounded-lg shadow-xl max-w-full h-auto md:max-w-md">
+                <img src="https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150818_6b4f086a494fb80f5e4e27b20671322d.gif" 
+                     alt="Premium Diamond Crossbody Bag" 
+                     class="rounded-lg shadow-xl floating max-w-full h-auto md:max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-500 text-2xl mr-2"></i>
+                    <span class="font-medium">100% Original</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-shield-alt text-blue-500 text-2xl mr-2"></i>
+                    <span class="font-medium">Garansi 1 Tahun</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-exchange-alt text-purple-500 text-2xl mr-2"></i>
+                    <span class="font-medium">Pengembalian Mudah</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-star text-yellow-500 text-2xl mr-2"></i>
+                    <span class="font-medium">500+ Reviews</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Problem Solution Section -->
-    <section class="py-12 bg-white">
+    <section class="bg-gray-50 py-16" id="features">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">Masalah Penyimpanan di Rumah Anda?</h2>
-                <p class="text-lg max-w-3xl mx-auto">Rumah berantakan karena barang tidak tertata? Rak penyimpanan konvensional tidak praktis dan memakan banyak tempat?</p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Masalah Wanita Modern & Solusi Kami</h2>
+                <div class="w-20 h-1 bg-pink-500 mx-auto"></div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-gray-100 p-6 rounded-lg">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <div class="flex items-start mb-4">
-                        <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 mt-1">
-                            <i class="fas fa-times"></i>
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-times text-pink-600 text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg text-dark mb-2">Masalah yang Sering Dihadapi</h3>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Barang berantakan dan sulit dicari</li>
-                                <li>Rak penyimpanan statis tidak efisien</li>
-                                <li>Memakan banyak ruang di rumah</li>
-                                <li>Sulit dibersihkan karena banyak sudut mati</li>
-                                <li>Desain tidak menarik merusak estetika ruangan</li>
-                            </ul>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Tas Biasa Terlihat Murahan</h3>
+                            <p class="text-gray-600">
+                                Banyak tas di pasaran menggunakan bahan dan aksesori berkualitas rendah yang mudah rusak dan tidak tahan lama.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-100 p-6 rounded-lg">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
                     <div class="flex items-start mb-4">
-                        <div class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 mt-1">
-                            <i class="fas fa-check"></i>
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check text-green-600 text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="font-bold text-lg text-dark mb-2">Solusi dari Rotating Storage Rack</h3>
-                            <ul class="list-disc pl-5 space-y-2">
-                                <li>Sistem putar 360° memudahkan akses barang</li>
-                                <li>Desain kompak menghemat ruang</li>
-                                <li>Material kuat dan tahan lama</li>
-                                <li>Mudah dibersihkan tanpa sudut mati</li>
-                                <li>Desain modern mempercantik ruangan</li>
-                            </ul>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Solusi: Kristal Authentic</h3>
+                            <p class="text-gray-600">
+                                Premium Diamond Crossbody Bag menggunakan kristal authentic yang memancarkan kilau premium dan tahan lama.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-times text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Desain Tidak Fleksibel</h3>
+                            <p class="text-gray-600">
+                                Tas kebanyakan hanya cocok untuk acara tertentu, tidak bisa dipakai untuk berbagai kesempatan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Solusi: Desain Multifungsi</h3>
+                            <p class="text-gray-600">
+                                Dengan desain yang elegan namun casual, tas ini cocok untuk kerja, kencan, atau acara formal sekalipun.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-pink-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-times text-pink-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Kapasitas Terbatas</h3>
+                            <p class="text-gray-600">
+                                Tas kecil seringkali tidak muat untuk barang-barang penting yang perlu dibawa sehari-hari.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-check text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Solusi: Kompartemen Cerdas</h3>
+                            <p class="text-gray-600">
+                                Dilengkapi dengan multiple kompartemen untuk dompet, ponsel, makeup, dan barang penting lainnya.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="text-center">
-                <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxy-m0h5sbs42m3p47.webp" 
-                     alt="Keunggulan Produk" 
-                     class="rounded-lg shadow-md max-w-full mx-auto">
-            </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-12 bg-gray-50">
+    <!-- Product Features -->
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">Fitur Unggulan Rotating Storage Rack</h2>
-                <p class="text-lg max-w-3xl mx-auto">Temukan kemudahan dalam menyimpan dan mengakses barang dengan fitur-fitur canggih kami</p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Keunggulan Premium Diamond Crossbody Bag</h2>
+                <div class="w-20 h-1 bg-pink-500 mx-auto"></div>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div class="bg-white p-6 rounded-lg shadow-md product-card transition-all">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-sync-alt"></i>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-gem text-pink-600 text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-dark mb-3">Sistem Putar 360°</h3>
-                    <p class="text-gray-600">Akses semua barang dengan mudah hanya dengan memutar rak tanpa perlu memindahkan barang satu per satu.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Kristal Authentic</h3>
+                    <p class="text-gray-600">
+                        Menggunakan kristal berkualitas tinggi yang tahan lama dan tidak mudah pudar.
+                    </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md product-card transition-all">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-layer-group"></i>
+                
+                <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-cut text-pink-600 text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-dark mb-3">3 Lapis Penyimpanan</h3>
-                    <p class="text-gray-600">Kapasitas besar dengan 3 tingkat penyimpanan yang dapat diisi berbagai macam barang kebutuhan rumah tangga.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Material Premium</h3>
+                    <p class="text-gray-600">
+                        Kulit sintetis berkualitas tinggi dengan jahitan rapi dan presisi.
+                    </p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md product-card transition-all">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fas fa-shield-alt"></i>
+                
+                <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tshirt text-pink-600 text-2xl"></i>
                     </div>
-                    <h3 class="font-bold text-xl text-dark mb-3">Material Kuat & Stabil</h3>
-                    <p class="text-gray-600">Terbuat dari plastik ABS berkualitas tinggi yang tahan lama dan stabil dengan alas anti slip.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Tali Adjustable</h3>
+                    <p class="text-gray-600">
+                        Tali yang bisa disesuaikan panjangnya untuk kenyamanan maksimal.
+                    </p>
                 </div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 mt-8">
-                <div>
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdwr-m0h5sc7dhp3if6.webp" 
-                         alt="Fitur Produk" 
-                         class="rounded-lg shadow-md w-full cursor-pointer gallery-image">
+                
+                <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lock text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Pengaman Ganda</h3>
+                    <p class="text-gray-600">
+                        Dilengkapi dengan resleting dan klip magnetik untuk keamanan barang.
+                    </p>
                 </div>
-                <div>
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rfhb-m95qekuo9qyod4.webp" 
-                         alt="Fitur Produk" 
-                         class="rounded-lg shadow-md w-full cursor-pointer gallery-image">
+                
+                <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-weight text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ringan & Nyaman</h3>
+                    <p class="text-gray-600">
+                        Hanya berat 450 gram, tidak membebani bahu saat digunakan seharian.
+                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">Galeri Produk</h2>
-                <p class="text-lg max-w-3xl mx-auto">Lihat lebih detail keindahan dan fungsionalitas Rotating Storage Rack kami</p>
-            </div>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="cursor-pointer gallery-image">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdyl-m0h5sbggjoem9e.webp" 
-                         alt="Produk 1" 
-                         class="rounded-lg shadow-md w-full h-full object-cover">
-                </div>
-                <div class="cursor-pointer gallery-image">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdxy-m0h5sbs42m3p47.webp" 
-                         alt="Produk 2" 
-                         class="rounded-lg shadow-md w-full h-full object-cover">
-                </div>
-                <div class="cursor-pointer gallery-image">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdwr-m0h5sc7dhp3if6.webp" 
-                         alt="Produk 3" 
-                         class="rounded-lg shadow-md w-full h-full object-cover">
-                </div>
-                <div class="cursor-pointer gallery-image">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rfhf-m95qek7x721h19@resize_w450_nl.webp" 
-                         alt="Produk 4" 
-                         class="rounded-lg shadow-md w-full h-full object-cover">
+                
+                <div class="text-center p-6 hover:bg-gray-50 rounded-lg transition duration-300">
+                    <div class="bg-pink-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-ruler-combined text-pink-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Ukuran Ideal</h3>
+                    <p class="text-gray-600">
+                        Dimensi 20x12x5 cm, cukup untuk membawa semua kebutuhan penting.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-12 bg-gray-50">
+    <!-- Product Gallery -->
+    <section class="py-16 bg-gray-50" id="gallery">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">Apa Kata Pelanggan Kami?</h2>
-                <p class="text-lg max-w-3xl mx-auto">Ribuan pelanggan telah merasakan manfaat dari Rotating Storage Rack ini</p>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Galeri Produk</h2>
+                <div class="w-20 h-1 bg-pink-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 product-gallery">
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150818_6b4f086a494fb80f5e4e27b20671322d.gif')">
+                    <img src="https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150818_6b4f086a494fb80f5e4e27b20671322d.gif" 
+                         alt="Premium Diamond Crossbody Bag" 
+                         class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150831_ed2833b622e56adf3b83f87ab2f15383.gif')">
+                    <img src="https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150831_ed2833b622e56adf3b83f87ab2f15383.gif" 
+                         alt="Premium Diamond Crossbody Bag Detail" 
+                         class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150857_cb38474fa4dd2a6666d0b26ef6ce51e2.jpg')">
+                    <img src="https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150857_cb38474fa4dd2a6666d0b26ef6ce51e2.jpg" 
+                         alt="Premium Diamond Crossbody Bag Warna Hitam" 
+                         class="w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="cursor-pointer" onclick="openModal('https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150902_ced217f79dad3dde4a60ff935f1dcc66.jpg')">
+                    <img src="https://cdn.shopify.com/s/files/1/0743/2998/1207/files/spp_20231212150902_ced217f79dad3dde4a60ff935f1dcc66.jpg" 
+                         alt="Premium Diamond Crossbody Bag Warna Putih" 
+                         class="w-full h-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white" id="testimonials">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Apa Kata Mereka?</h2>
+                <div class="w-20 h-1 bg-pink-500 mx-auto"></div>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-3">A</div>
-                        <div>
-                            <h4 class="font-bold">Anita Sari</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Rak ini sangat membantu mengatur dapur kecil saya. Sekarang semua bumbu dan peralatan masak mudah diakses tanpa berantakan."</p>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Tasnya sangat mewah dan terlihat premium. Kristalnya berkilau indah di bawah cahaya. Cocok banget untuk acara formal maupun casual."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-pink-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dian Sastrowardoyo</h4>
+                            <p class="text-sm text-gray-500">Jakarta</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center font-bold mr-3">B</div>
-                        <div>
-                            <h4 class="font-bold">Budi Santoso</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Kualitasnya bagus banget untuk harganya. Sudah 6 bulan dipakai masih seperti baru dan putarannya tetap lancar."</p>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Saya sudah beli 3 warna berbeda karena suka banget dengan kualitasnya. Bahannya kuat dan kristalnya tidak mudah lepas meski sering dipakai."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-pink-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maya Septiani</h4>
+                            <p class="text-sm text-gray-500">Bandung</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-accent text-dark flex items-center justify-center font-bold mr-3">D</div>
-                        <div>
-                            <h4 class="font-bold">Dewi Lestari</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Saya beli 2 untuk kamar mandi dan dapur. Sangat praktis! Sekarang tidak perlu repot mencari barang karena bisa diputar."</p>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Pengiriman cepat dan packing rapi. Tasnya lebih bagus dari foto, ukurannya pas untuk bawa dompet, hp, dan makeup. Worth it banget harganya!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-pink-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Rina Gunawan</h4>
+                            <p class="text-sm text-gray-500">Surabaya</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md testimonial-card">
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
                     <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-3">R</div>
-                        <div>
-                            <h4 class="font-bold">Rina Wijaya</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                     </div>
-                    <p class="text-gray-600">"Pengiriman cepat dan packing rapi. Produknya lebih bagus dari foto. Sekarang kamar kos saya terlihat lebih rapi dan stylish."</p>
+                    <p class="text-gray-600 mb-4 italic">
+                        "Beli pas promo gratis ongkir dan dapat bonus tas kedua. Kualitasnya sama bagusnya. Sekarang jadi koleksi favorite saya untuk matching dengan outfit."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-pink-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Larasati</h4>
+                            <p class="text-sm text-gray-500">Yogyakarta</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Details Section -->
-    <section class="py-12 bg-white">
+    <!-- FAQ -->
+    <section class="py-16 bg-gray-50" id="faq">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">Detail Produk</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Pertanyaan yang Sering Diajukan</h2>
+                <div class="w-20 h-1 bg-pink-500 mx-auto"></div>
             </div>
             
-            <div class="flex flex-col md:flex-row gap-8 items-center">
-                <div class="md:w-1/2">
-                    <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rfgy-m95pltzipkmfd5.webp" 
-                         alt="Detail Produk" 
-                         class="rounded-lg shadow-md w-full">
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 transition duration-300 flex justify-between items-center">
+                        <span>Apakah kristal pada tas ini original?</span>
+                        <i class="fas fa-chevron-down text-pink-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">
+                            Ya, kami menggunakan kristal authentic berkualitas tinggi yang tahan lama dan tidak mudah pudar. Setiap kristal dipasang dengan presisi untuk memastikan kilau maksimal.
+                        </p>
+                    </div>
                 </div>
-                <div class="md:w-1/2">
-                    <div class="bg-gray-50 p-6 rounded-lg">
-                        <h3 class="font-bold text-xl text-dark mb-4">Spesifikasi Produk:</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Material: Plastik ABS berkualitas tinggi</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Diameter: 28 cm</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Tinggi: 30 cm</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Berat: 0.8 kg</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Kapasitas: 3 kg per tingkat</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Warna: Putih bersih (mudah dibersihkan)</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Sistem putar 360° yang halus</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-primary mr-2 mt-1"></i>
-                                <span>Alas anti slip untuk stabilitas</span>
-                            </li>
-                        </ul>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 transition duration-300 flex justify-between items-center">
+                        <span>Berapa lama pengiriman sampai ke saya?</span>
+                        <i class="fas fa-chevron-down text-pink-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">
+                            Waktu pengiriman bervariasi tergantung lokasi Anda. Untuk Jabodetabek biasanya 1-2 hari kerja, Jawa 2-3 hari kerja, dan luar Jawa 3-5 hari kerja. Kami akan memberikan nomor resi setelah paket dikirim.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 transition duration-300 flex justify-between items-center">
+                        <span>Apakah ada garansi untuk produk ini?</span>
+                        <i class="fas fa-chevron-down text-pink-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">
+                            Kami memberikan garansi 1 tahun untuk kerusakan yang bukan disebabkan oleh kesalahan penggunaan. Jika ada masalah dengan produk Anda, silakan hubungi customer service kami.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 transition duration-300 flex justify-between items-center">
+                        <span>Bagaimana cara perawatan tas ini?</span>
+                        <i class="fas fa-chevron-down text-pink-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">
+                            Untuk perawatan, kami rekomendasikan:
+                            <br>1. Bersihkan dengan lap lembut yang sedikit dibasahi
+                            <br>2. Hindari kontak dengan bahan kimia atau parfum langsung
+                            <br>3. Simpan di tempat kering dan tidak lembab
+                            <br>4. Hindari gesekan keras yang dapat merusak kristal
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md mb-4 overflow-hidden">
+                    <button class="faq-question w-full text-left p-4 font-medium text-gray-800 hover:bg-gray-50 transition duration-300 flex justify-between items-center">
+                        <span>Apakah bisa COD (Cash On Delivery)?</span>
+                        <i class="fas fa-chevron-down text-pink-600 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer p-4 border-t border-gray-100 hidden">
+                        <p class="text-gray-600">
+                            Saat ini kami hanya melayani pembayaran melalui transfer bank, e-wallet, atau virtual account untuk memastikan transaksi yang aman dan terjamin. Kami tidak menyediakan layanan COD.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -423,329 +552,219 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="order" class="py-12 bg-primary text-white">
+    <section class="py-16 bg-gradient-to-r from-pink-600 to-purple-600 text-white" id="order">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Jangan Lewatkan Promo Spesial Kami!</h2>
-            <p class="text-xl mb-6 max-w-3xl mx-auto">Dapatkan Rotating Storage Rack dengan harga terbaik dan gratis ongkir ke seluruh Indonesia</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Jangan Lewatkan Kesempatan Ini!</h2>
             
-            <div class="bg-white text-dark rounded-xl p-6 max-w-4xl mx-auto mb-8">
-                <div class="flex flex-col md:flex-row justify-between items-center">
-                    <div class="mb-4 md:mb-0 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">PAKET HEMAT</h3>
-                        <p class="text-lg">BELI 1 GRATIS 1</p>
+            <div class="max-w-4xl mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 md:p-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-left mb-6 md:mb-0 md:mr-6">
+                        <div class="text-4xl font-bold mb-2">Rp179<span class="text-3xl">.000</span></div>
+                        <div class="text-xl line-through opacity-70 mb-2">Rp249.000</div>
+                        <div class="bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold inline-block">
+                            HEMAT 49%
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <p class="text-sm line-through">Harga Normal: Rp 349,000</p>
-                        <p class="text-3xl font-bold text-primary">Rp 199,000</p>
-                        <p class="text-sm">Harga per paket (2 pcs)</p>
+                    
+                    <div class="text-left mb-6 md:mb-0 md:mr-6">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-gift mr-2"></i>
+                            <span class="font-bold">GRATIS 1 TAS</span> untuk setiap pembelian
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-truck mr-2"></i>
+                            <span class="font-bold">GRATIS ONGKIR</span> ke seluruh Indonesia
+                        </div>
                     </div>
-                    <div class="mt-4 md:mt-0">
-                        <a href="https://api.whatsapp.com/send?phone=6287886635076&text=Halo%2C%20saya%20menginginkan%20Rotating%20Storage%20Rack" 
-                           class="bg-accent text-dark font-bold px-8 py-3 rounded-full text-lg hover:bg-yellow-400 transition-colors inline-block">
-                            BELI SEKARANG <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-white/20 rounded-lg p-4 inline-block mb-8">
-                <div class="flex items-center">
-                    <i class="fas fa-clock text-2xl mr-3"></i>
-                    <div>
-                        <p class="font-bold">PROMO BERAKHIR DALAM:</p>
-                        <div class="flex justify-center space-x-2" id="countdown">
-                            <div class="bg-white text-primary rounded p-2 text-center min-w-[50px]">
-                                <span class="font-bold text-xl" id="days">00</span>
-                                <span class="block text-xs">Hari</span>
-                            </div>
-                            <div class="bg-white text-primary rounded p-2 text-center min-w-[50px]">
-                                <span class="font-bold text-xl" id="hours">00</span>
-                                <span class="block text-xs">Jam</span>
-                            </div>
-                            <div class="bg-white text-primary rounded p-2 text-center min-w-[50px]">
-                                <span class="font-bold text-xl" id="minutes">00</span>
-                                <span class="block text-xs">Menit</span>
-                            </div>
-                            <div class="bg-white text-primary rounded p-2 text-center min-w-[50px]">
-                                <span class="font-bold text-xl" id="seconds">00</span>
-                                <span class="block text-xs">Detik</span>
-                            </div>
+                    
+                    <div class="text-left">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Promo berakhir dalam: <span id="countdown2" class="font-bold">23:59:59</span></span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-box-open mr-2"></i>
+                            <span>Stok tersisa: <span id="stock-counter" class="font-bold">27</span> pcs</span>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="bg-white text-dark rounded-lg p-4 inline-block max-w-md">
-                <div class="flex items-center">
-                    <div class="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center mr-3">
-                        <i class="fas fa-gift"></i>
-                    </div>
-                    <div>
-                        <p class="font-bold">BONUS SPESIAL!</p>
-                        <p class="text-sm">Gratis E-book "Tips Menata Rumah Minimalis" senilai Rp 50,000 untuk setiap pembelian hari ini</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-dark mb-4">Pertanyaan yang Sering Diajukan</h2>
-            </div>
-            
-            <div class="max-w-3xl mx-auto space-y-4">
-                <div class="bg-white p-5 rounded-lg shadow-md">
-                    <button class="flex justify-between items-center w-full faq-toggle">
-                        <h3 class="font-bold text-lg text-dark text-left">Berapa lama pengiriman produk?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden mt-3">
-                        <p class="text-gray-600">Pengiriman biasanya memakan waktu 2-5 hari kerja tergantung lokasi pengiriman. Kami bekerja sama dengan kurir terpercaya untuk memastikan produk sampai dengan aman dan tepat waktu.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow-md">
-                    <button class="flex justify-between items-center w-full faq-toggle">
-                        <h3 class="font-bold text-lg text-dark text-left">Apakah produk ini bisa dikembalikan?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden mt-3">
-                        <p class="text-gray-600">Ya, kami menerima pengembalian dalam waktu 7 hari setelah produk diterima dengan syarat produk masih dalam kondisi baru, belum digunakan, dan packaging masih lengkap. Silakan hubungi customer service kami untuk proses pengembalian.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow-md">
-                    <button class="flex justify-between items-center w-full faq-toggle">
-                        <h3 class="font-bold text-lg text-dark text-left">Bagaimana cara perawatan produk ini?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden mt-3">
-                        <p class="text-gray-600">Produk ini sangat mudah dirawat. Cukup bersihkan dengan lap basah atau spons lembut dengan sabun ringan. Hindari penggunaan bahan kimia keras atau sikat kasar yang dapat merusak permukaan produk.</p>
-                    </div>
-                </div>
-                <div class="bg-white p-5 rounded-lg shadow-md">
-                    <button class="flex justify-between items-center w-full faq-toggle">
-                        <h3 class="font-bold text-lg text-dark text-left">Apakah produk ini aman untuk makanan?</h3>
-                        <i class="fas fa-chevron-down text-primary"></i>
-                    </button>
-                    <div class="faq-content hidden mt-3">
-                        <p class="text-gray-600">Ya, material plastik ABS yang kami gunakan merupakan food grade dan aman untuk menyimpan bahan makanan. Namun disarankan untuk tidak menyimpan makanan panas langsung atau makanan yang masih mengandung minyak panas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="py-12 bg-dark text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Masih Ragu untuk Membeli?</h2>
-            <p class="text-xl mb-6 max-w-3xl mx-auto">Kami berikan GARANSI 100% UANG KEMBALI jika produk tidak sesuai deskripsi atau Anda tidak puas</p>
-            
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-8">
-                <div class="bg-white/10 p-6 rounded-lg">
-                    <div class="text-4xl mb-4 text-primary">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Garansi Kepuasan</h3>
-                    <p>Uang kembali 100% jika tidak puas dengan produk kami</p>
-                </div>
-                <div class="bg-white/10 p-6 rounded-lg">
-                    <div class="text-4xl mb-4 text-primary">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Gratis Ongkir</h3>
-                    <p>Ke seluruh wilayah Indonesia tanpa biaya tambahan</p>
-                </div>
-                <div class="bg-white/10 p-6 rounded-lg">
-                    <div class="text-4xl mb-4 text-primary">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="font-bold text-xl mb-2">Customer Service 24/7</h3>
-                    <p>Siap membantu Anda kapan saja melalui WhatsApp</p>
-                </div>
-            </div>
-            
-            <a href="https://api.whatsapp.com/send?phone=6287886635076&text=Halo%2C%20saya%20menginginkan%20Rotating%20Storage%20Rack" 
-               class="bg-primary text-white font-bold px-8 py-4 rounded-full text-lg hover:bg-red-600 transition-colors inline-block mb-4">
-                <i class="fab fa-whatsapp mr-2"></i> HUBUNGI KAMI VIA WHATSAPP
+            <a href="https://nava.orderonline.id/checkout-premium-diamond-crossbody-bag" 
+               class="inline-block bg-white text-pink-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-full text-lg md:text-xl transition duration-300 transform hover:scale-105 pulse shine mb-6">
+                <i class="fas fa-shopping-bag mr-2"></i> BELI SEKARANG JUGA
             </a>
             
-            <p class="text-sm mt-4">Klik tombol di atas akan langsung terhubung ke WhatsApp kami</p>
+            <p class="text-white text-opacity-80 text-sm">
+                <i class="fas fa-lock mr-1"></i> Pembayaran aman melalui sistem terenkripsi
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
+    <footer class="bg-gray-900 text-gray-400 py-12">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <div class="flex items-center">
-                        <img src="https://down-id.img.susercontent.com/file/sg-11134201-7rdyl-m0h5sbggjoem9e.webp" alt="Logo" class="h-10">
-                        <span class="ml-2 font-bold text-xl">Rotating Storage</span>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">DiamondLux</h3>
+                    <p class="mb-4">
+                        Brand fashion eksklusif untuk wanita modern yang mengutamakan kualitas dan gaya.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
                     </div>
-                    <p class="text-gray-400 mt-2">Solusi Penyimpanan Praktis untuk Rumah Minimalis</p>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
+                
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-white">Syarat & Ketentuan</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Bantuan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Panduan Ukuran</a></li>
+                        <li><a href="#" class="hover:text-white">Metode Pembayaran</a></li>
+                        <li><a href="#" class="hover:text-white">Pengembalian Produk</a></li>
+                        <li><a href="#" class="hover:text-white">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-white text-lg font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Jl. Kemang Raya No.12, Jakarta Selatan</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            <span>0858-8034-3981</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>cs@diamondlux.com</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400 text-sm">
-                <p>© 2023 Rotating Storage Rack. All Rights Reserved.</p>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 DiamondLux. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Image Modal -->
-    <div class="modal fixed inset-0 bg-black/90 z-50 flex items-center justify-center hidden" id="image-modal">
+    <div id="imageModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 modal hidden">
         <div class="relative max-w-4xl w-full p-4">
-            <button class="absolute -top-12 right-0 text-white text-3xl" id="close-modal">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl hover:text-pink-400">
                 <i class="fas fa-times"></i>
             </button>
-            <img src="" alt="" class="w-full h-auto max-h-[80vh] object-contain" id="modal-image">
+            <img id="modalImage" src="" alt="" class="w-full h-auto max-h-screen rounded-lg">
         </div>
     </div>
 
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // FAQ Toggle
-        const faqToggles = document.querySelectorAll('.faq-toggle');
-        
-        faqToggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const content = toggle.nextElementSibling;
-                const icon = toggle.querySelector('i');
-                
-                content.classList.toggle('hidden');
-                icon.classList.toggle('fa-chevron-down');
-                icon.classList.toggle('fa-chevron-up');
-            });
-        });
-
-        // Image Gallery Modal
-        const galleryImages = document.querySelectorAll('.gallery-image');
-        const imageModal = document.getElementById('image-modal');
-        const modalImage = document.getElementById('modal-image');
-        const closeModal = document.getElementById('close-modal');
-        
-        galleryImages.forEach(image => {
-            image.addEventListener('click', () => {
-                const imgSrc = image.querySelector('img').src;
-                modalImage.src = imgSrc;
-                imageModal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-        
-        closeModal.addEventListener('click', () => {
-            imageModal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        });
-        
-        imageModal.addEventListener('click', (e) => {
-            if (e.target === imageModal) {
-                imageModal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // Dynamic Counters
-        function animateCounter(element, target, duration = 2000) {
-            const start = 0;
-            const increment = target / (duration / 16);
-            let current = start;
-            
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    clearInterval(timer);
-                    current = target;
-                }
-                element.textContent = Math.floor(current).toLocaleString();
-            }, 16);
-        }
-        
-        // Initialize counters when they come into view
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const counterId = entry.target.id;
-                    
-                    if (counterId === 'view-counter') {
-                        animateCounter(entry.target, 1258);
-                    } else if (counterId === 'sold-counter') {
-                        animateCounter(entry.target, 892);
-                    } else if (counterId === 'stock-counter') {
-                        // Decrease stock counter over time
-                        let stock = 48;
-                        const stockCounter = entry.target;
-                        
-                        const stockInterval = setInterval(() => {
-                            if (stock > 0 && Math.random() > 0.7) {
-                                stock--;
-                                stockCounter.textContent = stock;
-                                
-                                if (stock <= 5) {
-                                    stockCounter.classList.add('text-red-500');
-                                }
-                            }
-                            
-                            if (stock <= 0) {
-                                clearInterval(stockInterval);
-                            }
-                        }, 30000); // Update every 30 seconds
-                    }
-                    
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        observer.observe(document.getElementById('view-counter'));
-        observer.observe(document.getElementById('sold-counter'));
-        observer.observe(document.getElementById('stock-counter'));
-
         // Countdown Timer
         function updateCountdown() {
             const now = new Date();
-            const endDate = new Date();
-            endDate.setDate(now.getDate() + 3); // Set promo to end in 3 days
+            const endOfDay = new Date();
+            endOfDay.setHours(23, 59, 59, 0);
             
-            const diff = endDate - now;
+            const diff = endOfDay - now;
             
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const hours = Math.floor(diff / (1000 * 60 * 60));
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
-            document.getElementById('days').textContent = days.toString().padStart(2, '0');
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            document.getElementById('countdown').textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('countdown2').textContent = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }
         
-        updateCountdown();
         setInterval(updateCountdown, 1000);
-
+        updateCountdown();
+        
+        // View Counter (random increment)
+        function updateViewCounter() {
+            const counter = document.getElementById('view-counter');
+            let current = parseInt(counter.textContent.replace(/,/g, ''));
+            const increment = Math.floor(Math.random() * 3) + 1;
+            current += increment;
+            counter.textContent = current.toLocaleString();
+        }
+        
+        setInterval(updateViewCounter, 5000);
+        
+        // Stock Counter (random decrement)
+        function updateStockCounter() {
+            const counter = document.getElementById('stock-counter');
+            let current = parseInt(counter.textContent);
+            if (current > 0) {
+                const decrement = Math.random() > 0.7 ? 1 : 0;
+                current -= decrement;
+                if (current < 0) current = 0;
+                counter.textContent = current;
+                
+                if (current < 10) {
+                    counter.classList.add('text-red-500');
+                    counter.classList.add('animate-pulse');
+                }
+            }
+        }
+        
+        setInterval(updateStockCounter, 10000);
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Image Modal
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modalImg.src = src;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside image
+        document.getElementById('imageModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('imageModal')) {
+                closeModal();
+            }
+        });
+        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 
                 const targetId = this.getAttribute('href');
